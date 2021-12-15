@@ -55,6 +55,7 @@ double linearInterpolation(const std::vector<double> &mesh, const std::vector<do
 }
 
 int main() {
+
     std::vector<double> mesh;
     auto system = generateSystem(mesh, p, q, f, 0, M_PI, 100, 1, 0, 1, 0, 0, M_PI * M_PI);
     std::cout << mesh << ThomasAlgorithm(system.first, system.second);
